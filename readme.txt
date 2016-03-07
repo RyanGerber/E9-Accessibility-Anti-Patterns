@@ -46,6 +46,11 @@ The background:none change for body content text upon hovering over a link
 
 This makes the link not visually distinct which can make it difficult for visually impaired users to differentiate clickable from unclickable text.
 
+7) Reduced
+The spacing between main level navigation links from padding: 5px 14px to padding: 5px 5px
+
+This makes the text difficult to read for people with cognitive disabilities like Dyslexia. Losing the space between lines of text makes it harder to separate individual letters.
+
 Pre-existing Issues:
 After playing with the different accessibility tools, we found Google's Accessibilty Developer Tools worked well in detecting pre-existing issues with the site code. Through the tool we found several issues. The most severe was that the email address input was missing a label which should be included with all controls and media elements. Another issue was that text elements should have a reasonable contrast ration. This was directed at the navigation bar submenu links which didn't meet the contrast ratio rule from Google's tool. A final warning dealt with the semantics tied to several of the links on the page, specifically those in the header and logo. The tool felt that the purpose of each link was not clear from the included link text.
 
