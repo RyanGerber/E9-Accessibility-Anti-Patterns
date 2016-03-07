@@ -35,32 +35,27 @@ img {
 GENERAL STYLING
 *****************************************************************************/
 body {
-	font: 0.78em Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: #000;
-	background: #e9e9e9;
-	
+	font: 0.78em Arial, "Helvetica Neue", Helvetica;
 }
 
 #sidebar a{text-decoration: underline;}
 
 #sidebar a:hover{color: black;}
 #body{
-		background:#ffffff;
 	min-height: 800px;
-
+	background: rgb(25, 25, 128); 
+	background: rgba(25, 25, 128, .3);
 }
 a {
 	color: #2b86b2;
 	text-decoration: none;
 	outline: none;
 }
-a:hover {
-	text-decoration: underline;
-}
+
 p {
 	margin: 0 0 0.2em;
 	padding: 0;
-	line-height: 1.8;
+	line-height: 1;
 }
 small {
 	font-size: 87%;
@@ -90,8 +85,8 @@ h1 {
 	margin: 20px 0 .4em;
 	font-size: 22px;
 	color: #2b86b2;
-  font-weight: normal;
-  margin: 0 0 0.2em;
+    font-weight: normal;
+    margin: 0 0 0.2em;
 }
 
 h2 {
@@ -101,7 +96,8 @@ h2 {
 	margin: 0 0 0.2em;
 }
 
-h3 { }
+h3 { 
+}
 
 h4 { }
 
@@ -215,15 +211,14 @@ STRUCTURE
 #content.clearfix p a:hover{
 	text-decoration: none;
 	display: inline; 
-  color: black;
+    color: black;
 	font-weight: bold;
-	background: none;
 }
 
 #content.clearfix p a{
 	text-decoration: none;
 	display: inline;
-  color: black;
+    color: black;
 	font-weight: bold;
 	
 	background: #eaf3dd; /* Old browsers */
@@ -601,26 +596,15 @@ cursor: pointer;
   color: white;
 }
 
-/* main level link :hover */
-#main-nav a:hover {
-	background: #eee;
-	color: black;
-	cursor: pointer;
-}
-
 /* current link */
 #main-nav .current_page_item a, #main-nav .current-menu-item a {
-	color: #000; background: #eee;
-}
-/* current link :hover */
-#main-nav .current_page_item a:hover, #main-nav .current-menu-item a:hover {
 	color: #000; background: #eee;
 }
 
 /* sub-levels link */
 
 #main-nav ul a, #main-nav .current_page_item ul a, #main-nav ul .current_page_item a, #main-nav .current-menu-item ul a, #main-nav ul .current-menu-item a, #main-nav li:hover > ul a  {
-	color: #666;
+	color: #000;
 	font-size: 100%;
 	line-height: 140%;
 	font-weight: normal;
@@ -653,8 +637,8 @@ cursor: pointer;
 	padding: 5px 0;
 	list-style: none;
 	position: absolute;
-	background: #fff;
-	border: solid 1px #ccc;
+	background: rgb(25, 25, 128); 
+	background: rgba(25, 25, 128, .3);
 	z-index: 100;
 	display: none;
 	-webkit-border-radius: 5px;
